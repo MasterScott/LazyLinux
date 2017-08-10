@@ -18,4 +18,4 @@ while option != 1:
    sendto = raw_input("Victim: ")
    sub = raw_input("Subject: ")
    mes = raw_input("Message: ")
-   os.system('sendemail -f'
+   os.system('sendemail -f '+spoof+' -t '+sendto+' -s '+sub+' -m '+mes+'
