@@ -38,7 +38,7 @@ if option == 3:
        print "4. Upercase and Lowercase"
        print "5. Upercase and Numbers"
        print "6. Lowercaseand Numbers
-       print "5. Alphanumeric"
+       print "7. Alphanumeric"
        print "8. Alphnumeric and spaces"
        print "9. Alphanumeric and Symbols"
        print "10.Alphanumeric and  Symbols and Spaces"
@@ -59,7 +59,20 @@ if option == 3:
    if type == 4:
                  charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
    if type == 5:
-                 
+                 charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+   if type == 6:
+                 charset = "abcdefghijklmnopqrstuvwxyz1234567890"
+   if type == 7:
+                 charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+   if type == 8:
+                 charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890\ "
+   if type == 9:
+                 charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#$&*()'"%-+=/;:,.?!><…~|§€£¥_^[]{}"
+   if type == 10:
+                 charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#$&*()'"%-+=/;:,.€£¥_^[]{}§|~…<>!?\ "
+   if type = 11:
+                 charset = raw_input("Type all charecters to be used: ")
+   print ("using charset "+charset+".")
    min = raw_input("Minimum Password Leangth: ")
    max = raw_input("Maximum Password Leangth: ")
     
