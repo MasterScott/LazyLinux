@@ -21,3 +21,4 @@ while option != 1:
    times = input("Times: ')
    for i in range(0, times):
        os.system('sendemail -f '+spoof+' -t '+sendto+' -s '+sub+' -m '+mes+' -xu '+stmpserver+' -xp '+stmppass')
+    print("All emails sent!")
