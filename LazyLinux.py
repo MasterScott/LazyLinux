@@ -67,9 +67,9 @@ if option == 3:
    if type == 8:
                  charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890\ "
    if type == 9:
-                 charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#$&*()'"%-+=/;:,.?!><…~|§€£¥_^[]{}"
+                 charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#$&*()'%-+=/;:,.?!><…~|§€£¥_^[]{}"
    if type == 10:
-                 charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#$&*()'"%-+=/;:,.€£¥_^[]{}§|~…<>!?\ "
+                 charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#$&*()'%-+=/;:,.€£¥_^[]{}§|~…<>!?\ "
    if type = 11:
                  charset = raw_input("Type all charecters to be used: ")
    print ("using charset "+charset+".")
