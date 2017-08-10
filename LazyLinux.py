@@ -75,5 +75,7 @@ if option == 3:
    print ("using charset "+charset+".")
    min = raw_input("Minimum Password Leangth: ")
    max = raw_input("Maximum Password Leangth: ")
+   os.system('apt-get install crunch -y')
+   os.system('crunch '+min+' '+max+' '+charset+' -o /root/Desktop/password.list')
     
                  
