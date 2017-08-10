@@ -3,9 +3,9 @@ from time import sleep
 def choose:
    print "Select An Option:"
    print "1. Spoof/Spam Email"
-   print "2. UPD
+   print "2. Fully Update Kali"
 option = input(">")
-while option != 1:
+while option != 1 or 2:
   print"INVALID OPTION"
   choose()
  if option == 1:
@@ -23,3 +23,10 @@ while option != 1:
    for i in range(0, times):
        os.system('sendemail -f '+spoof+' -t '+sendto+' -s '+sub+' -m '+mes+' -xu '+stmpserver+' -xp '+stmppass')
     print("All emails sent!")
+if option == 2:
+    os.system('apt-get update -y')
+    os.system('apt-get upgrade -y')
+    os.system('apt-get dist upgrade -y')
+    os.system('apt autoremove -y')
+    
+                 
