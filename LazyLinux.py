@@ -30,7 +30,7 @@ if option == 2:
     os.system('apt-get dist upgrade -y')
     os.system('apt autoremove -y')
 if option == 3:
-    def a():
+  def a():
        print "Choose Type:\n"
        print "1. Numeric"
        print "2. Lowercase"
@@ -43,7 +43,24 @@ if option == 3:
        print "9. Alphanumeric and Symbols"
        print "10.Alphanumeric and  Symbols and Spaces"
        print "11. Custom"
-    min = raw_input("Minimum Password Leangth: ")
-    max = raw_input("Maximum Password Leangth: ")
+   a()
+   type = input(">")
+   while type != 1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 or 10 or 11:
+                 print "\n\n\nPlease select a vallid option."
+                 sleep(4)
+                 a()
+                 type = input(">")
+   if type == 1:
+                 charset = "1234567890"
+   if type == 2:
+                 charset = "abcdefghijklmnopqrstuvwxyz"
+   if type == 3:
+                 charset = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+   if type == 4:
+                 charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"
+   if type == 5:
+                 
+   min = raw_input("Minimum Password Leangth: ")
+   max = raw_input("Maximum Password Leangth: ")
     
                  
