@@ -8,4 +8,5 @@ while option != 1:
   print"INVALID OPTION"
   choose()
  if option == 1:
-   stmpQ = input 
+   print "You need a STMP server. \n If you don't have one, I suggest STMP2GO.com\n\n\n"
+   
