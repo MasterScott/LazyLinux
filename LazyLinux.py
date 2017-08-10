@@ -1,11 +1,12 @@
 from os import system
 from time import sleep
-def choose:
-   print "Select An Option:"
+def choose():
+   print "Select An Option:\n"
    print "1. Spoof/Spam Email"
    print "2. Fully Update Kali"
+   print "3. Genarate Password List"
 option = input(">")
-while option != 1 or 2:
+while option != 1 or 2 or 3:
   print"INVALID OPTION"
   choose()
  if option == 1:
@@ -28,5 +29,15 @@ if option == 2:
     os.system('apt-get upgrade -y')
     os.system('apt-get dist upgrade -y')
     os.system('apt autoremove -y')
+if option == 3:
+    def a():
+       print "Choose Type:\n"
+       print "1. Numeric"
+       print "2. Lowercase"
+       print "3. Upercase"
+       print "4. Upercase and Lowercase"
+       print "5. Alpha-numeric"
+    min = raw_input("Minimum Password Leangth: ")
+    max = raw_input("Maximum Password Leangth: ")
     
                  
