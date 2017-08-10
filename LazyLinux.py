@@ -36,9 +36,13 @@ if option == 3:
        print "2. Lowercase"
        print "3. Upercase"
        print "4. Upercase and Lowercase"
-       print "5. Alpha-numeric"
-       print "6. Alphanumeric and Symbols"
-       print "7.Alphanumeric and  Symbols and Spaces"
+       print "5. Upercase and Numbers"
+       print "6. Lowercaseand Numbers
+       print "5. Alphanumeric"
+       print "8. Alphnumeric and spaces"
+       print "9. Alphanumeric and Symbols"
+       print "10.Alphanumeric and  Symbols and Spaces"
+       print "11. Custom"
     min = raw_input("Minimum Password Leangth: ")
     max = raw_input("Maximum Password Leangth: ")
     
