@@ -8,6 +8,7 @@ while option != 1:
   print"INVALID OPTION"
   choose()
  if option == 1:
+   os.system('apt-get install sendemail -y')
    print "You need a STMP server. \n If you don't have one, I suggest STMP2GO.com\n\n\n"
    print ('If you want to set any of these variables as default, edit the code in "LazyLinux.py"')
    sleep(3)
@@ -16,4 +17,5 @@ while option != 1:
    spoof = raw_input ("Send From(Can be false): ")
    sendto = raw_input("Victim: ")
    sub = raw_input("Subject: ")
-   
+   mes = raw_input("Message: ")
+   os.system
