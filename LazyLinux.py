@@ -7,3 +7,5 @@ option = input(">")
 while option != 1:
   print"INVALID OPTION"
   choose()
+ if option == 1:
+   stmpQ = input 
