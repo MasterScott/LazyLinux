@@ -81,6 +81,7 @@ if option == 3:
 if option == 4:
    os.system('apt-get install hydra')
    victim = raw_input("Victim: ")
-   
+   lc = raw_input("File Location of Password List: ")
+   os.system('hy
     
                  
