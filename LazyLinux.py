@@ -79,6 +79,8 @@ if option == 3:
    os.system('apt-get install crunch -y')
    os.system('crunch '+min+' '+max+' '+charset+' -o /root/Desktop/password.list')
 if option == 4:
+   os.system('apt-get install hydra')
+   victim = raw_input("Victim: ")
    
     
                  
