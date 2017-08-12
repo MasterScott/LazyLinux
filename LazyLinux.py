@@ -5,8 +5,9 @@ def choose():
    print "1. Spoof/Spam Email"
    print "2. Fully Update Kali"
    print "3. Genarate Password List"
+   print "4. Crack Gmail Password"
 option = input(">")
-while option != 1 or 2 or 3:
+while option != 1 or 2 or 3 or 4:
   print"INVALID OPTION"
   choose()
  if option == 1:
@@ -77,5 +78,7 @@ if option == 3:
    max = raw_input("Maximum Password Leangth: ")
    os.system('apt-get install crunch -y')
    os.system('crunch '+min+' '+max+' '+charset+' -o /root/Desktop/password.list')
+if option == 4:
+   
     
                  
